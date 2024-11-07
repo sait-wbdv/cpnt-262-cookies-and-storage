@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Storage Simulator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Web Storage Simulation</h1>
+
+    <section class="web-storage-container">
+      <div class="storage-section">
+        <h2>Cookies</h2>
+        <input
+          type="text"
+          id="cookieData"
+          placeholder="Enter data for Cookie"
+        />
+        <button onclick="saveCookie()">Save Cookie</button>
+        <button onclick="viewCookies()">View Cookies</button>
+        <button onclick="clearCookies()">Clear Cookies</button>
+        <p id="cookieDisplay">No data stored.</p>
+      </div>
+
+      <div class="storage-section">
+        <h2>Local Storage</h2>
+        <input
+          type="text"
+          id="localData"
+          placeholder="Enter data for Local Storage"
+        />
+        <button onclick="saveLocalStorage()">Save Local</button>
+        <button onclick="viewLocalStorage()">View Local</button>
+        <button onclick="clearLocalStorage()">Clear Local</button>
+        <p id="localDisplay">No data stored.</p>
+      </div>
+
+      <div class="storage-section">
+        <h2>Session Storage</h2>
+        <input
+          type="text"
+          id="sessionData"
+          placeholder="Enter data for Session Storage"
+        />
+        <button onclick="saveSessionStorage()">Save Session</button>
+        <button onclick="viewSessionStorage()">View Session</button>
+        <button onclick="clearSessionStorage()">Clear Session</button>
+        <p id="sessionDisplay">No data stored.</p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
